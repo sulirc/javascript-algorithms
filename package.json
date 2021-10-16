@@ -4,8 +4,9 @@
   "description": "Algorithms and data-structures implemented on JavaScript",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src/**",
+    "lint": "eslint ./src/algorithms/** ./src/data-structures/**",
     "test": "jest",
+    "test:w": "jest --watch",
     "coverage": "npm run test -- --coverage",
     "ci": "npm run lint && npm run coverage",
     "prepare": "husky install"
